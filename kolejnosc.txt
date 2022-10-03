@@ -1,0 +1,10 @@
+1. Zaznaczyc obiekt w Video Labeller App i "Export Labels" do pliku
+2. Wyestymowac anchor boxes za pomocą "estimateMyAnchorBoxes.m" 
+3. wybrane anchor boxes podejrzec jako zmienna w i wkleic w odpowiednim miejscu do "train.m"
+4. stworzyc sieć neuronową za pomocą "train.m" (ok. 30 minut). Zapisze się ona do pliku "YoloV2detector..."
+5. W detection.m w linijce 15 Zamienić nazwę pliku, który ma być siecią neuronową na tą, co przed chwilą powstała
+6. W detection_COMPILATION.m zmienić adres IP na ten z raspberry i uruchomić.
+7. Skompilowany plik "detection.elf" z bibliotekami powinien się znajdować w "~/matlabCodegens"
+
+Na raspberry musi być skompilowana "Arm compute library" w wersji, którą obsługuje używany matlab i umieszczona w katalogu np. " /usr/local" tak, żeby domyślnie zawsze ją widział kompilator
+https://www.mathworks.com/matlabcentral/answers/455590-matlab-coder-how-do-i-build-the-arm-compute-library-for-deep-learning-c-code-generation-and-deplo
